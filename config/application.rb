@@ -22,5 +22,8 @@ module SampleApp
 
     # Do not swallow errors in after_commit/after_rollback callbacks.
     config.active_record.raise_in_transactional_callbacks = true
+
+    #enable web_console in test environment
+    config.web_console.development_only = false
   end
 end
